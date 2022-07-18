@@ -1,0 +1,89 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    width: 80%;
+    height: 1300px;
+    background-color: white;
+    display: grid;
+    margin: auto;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+
+    "first-one first-one first-one first-one first-one first-one first-two first-two first-two first-three first-three first-three"
+    "first-one first-one first-one first-one first-one first-one first-two first-two first-two first-three first-three first-three"
+    "first-one first-one first-one first-one first-one first-one first-two first-two first-two first-three first-three first-three"
+    "second-one second-one second-one second-two second-two second-two second-two second-two second-two first-three first-three first-three"
+    "second-one second-one second-one second-two second-two second-two second-two second-two second-two first-three first-three first-three"
+    "second-one second-one second-one second-three second-three second-three second-three second-three second-three first-three first-three first-three"
+    "second-one second-one second-one second-three second-three second-three second-three second-three second-three first-three first-three first-three"
+    "second-one second-one second-one second-three second-three second-three second-three second-three second-three first-three first-three first-three"
+    "third-one third-one third-one third-two third-two third-two  third-three third-three third-three third-four third-four third-four  "
+    "third-one third-one third-one third-two third-two third-two  third-three third-three third-three third-four third-four third-four  "
+    ;
+    gap: 20px;
+}
+.parent div {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-bottom: 2px solid #FF3D00;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.parent div p:first-of-type {
+    color: #A8A8A8;
+}
+
+.parent div p:nth-last-of-type(2) {
+    font-weight: bold   ;
+}
+
+.first-one {
+    grid-area: first-one;
+}
+
+.first-two {
+    grid-area: first-two;
+}
+
+.first-three {
+    grid-area: first-three;
+    background-color: black !important  ;
+    color: white !important;
+}
+
+.second-one {
+    grid-area: second-one;
+}
+
+.second-two {
+    grid-area: second-two;
+    background-color: black !important  ;
+    color: white !important;
+}
+
+.second-three {
+    grid-area: second-three;
+}
+
+.third-one {
+    grid-area: third-one;
+}
+.third-two {
+    grid-area: third-two;
+    background-color: black !important  ;
+    color: white !important;
+}
+.third-three {
+    grid-area: third-three;
+}
+.third-four {
+    grid-area: third-four;
+}
